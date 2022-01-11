@@ -16,3 +16,10 @@ ul{
 ol{
 	font-family:georgia
 }
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: lightgray;
+    color: blue;
+   }
