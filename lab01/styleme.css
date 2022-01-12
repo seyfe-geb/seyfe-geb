@@ -1,5 +1,10 @@
 body{
-	background-color:darkgray;
+	background-color:aliceblue;
+	font-size:18px;
+	font-family: arial;
+	padding-left:2%;
+	color: green;
+  
 }
 h1{
 	color:blue;
