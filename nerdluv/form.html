@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>HTML Forms Lab</title>
+</head>
+<body>
+  <fieldset>
+  <legend>
+    New User Signup:
+  </legend>
+  <div id="form">
+  <form action="http://mumstudents.org/params.php" autocomplete="on">
+
+
+  
+    <div class="row">
+      <div class="col1">
+        <label>Name: </label>
+      </div>
+
+      <div class= "col2">
+        <input type="text" maxlength="16">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class= "col1">
+        <label>Gender: </label>
+
+      </div>
+      <div class= "col2">
+        <input type="radio" name= "gender" value="Male">
+        <label>Male </label>
+        <input type="radio" name= "gender" value="Female">
+        <label>Female </label>
+      </div>
+    </div>
+
+
+    <div class= "row">
+
+      <div class="col1">
+        <label>Age: </label>
+      </div>
+
+      <div class= "col2">
+        <input type="text" maxlength="6" style="width: 80px;"> 
+      </div>
+    </div>
+
+    <div class= "row">
+      <div class= "col1"><label>Personality type: </label></div>
+
+      <div class="col2">  <input type="text" maxlength="6" style="width: 80px;"> (<span style="color:red">Don't know your type?</span>)
+      </div>
+    </div>
+
+    <div class="row">
+      <div class= "col1">      <label>Favourite OS: </label></div>
+
+   
+      <div class= "col2">
+        <select id="os" name="os">
+          <option value="Windows">Windows</option>
+          <option value="Macos">MAC OS</option>
+          <option value="Linux">Linux</option>
+        </select>
+      </div>
+    
+    </div>
+
+    <div class= "row">
+      <div class= "col1">      <label>Seeking age: </label>
+      </div>
+
+      <div class= "col2">    <input type="text" placeholder= "max" maxlength="2" style="width: 40px;"> to <input type="text" placeholder="min" maxlength="2" style="width: 40px;"> 
+      </div>
+    </div>
+
+    <div class= "row">
+      <input type="submit" name="submit" value="Sign Up" id= "submit"> 
+    </div>
+
+  </form>
+  </div>
+</fieldset>
+</body>
+</html>

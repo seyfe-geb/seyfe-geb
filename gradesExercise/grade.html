@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="grade.css">
+
+  <title>Retrieve Grade</title>
+
+</head>
+
+<body>
+  <div id="header"><h1>Retrieve Your Grade</h1></div>
+  
+<div id= "form">
+  <form action= "http://mumstudents.org/params.php" autocomplete="on" >
+    <label for= "name">Name: </label> <br>
+    <input type= "text" class="inp" name= "name" placeholder="Enter your name"> <br><br>
+    <label for= "id">Student ID: </label>  <br>
+    <input type="text" class="inp" name="id" placeholder="Enter your ID"> <br><br>
+
+    <label for= "courses" >Course: </label>
+    <select id="courses" name="courses">
+      <option value="CS472">WAP</option>
+      <option value="CS525">WAA</option>
+      <option value="CS425">SE</option>
+      <option value="CS575">ASD</option>
+    </select>
+    <br><br>
+
+    <label>Entry: </label> <br>
+
+    <input type="radio" id="aug" name="entry" value= "Aug-2021"> 
+    <label for= "aug">August 2021: </label><br>
+    <input type="radio" id="may" name="entry" value= "May-2021"> 
+    <label for= "may">May 2021: </label><br>
+    <input type="radio" id="feb" name="entry" value= "Feb-2021"> 
+    <label for= "feb">Feb 2021: </label> <br><br>
+   
+
+    <label>Select living things only:</label> <br>
+    <input type="checkbox" id="cat" name="living" value="Cat">
+  <label for="cat">Cat</label><br>
+  <input type="checkbox" id="desk" name="living" value="Desk">
+  <label for="desk">Desk</label><br>
+  <input type="checkbox" id="dog" name="living" value="Dog">
+  <label for="dog">Dog</label><br><br>
+
+    <input type= "submit" id= "submit" value="get grade"> 
+
+  </form>
+
+</div> 
+</body>
+
+</html>
