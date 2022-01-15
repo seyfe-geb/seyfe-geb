@@ -2,8 +2,16 @@
 <html>
     <head>
         <title>On Click Alert Exercise</title>
+        <link rel="stylesheet" type="text/css" href="alert.css">
     </head>
     <body>
-        <input type="button" value="Click Me" onclick="alert('You Clicked Me')">
+        <div id="alrt">
+            <input type="button" value="Click Me" onclick="onClickAlert()">
+        </div>
+        <script>
+            function onClickAlert(){
+                alert("You Clicked Me");
+            }
+        </script>
     </body>
 </html>

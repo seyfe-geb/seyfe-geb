@@ -1,0 +1,12 @@
+#alrt{
+    margin: 200px;
+    padding:200px;
+    align-content: center;
+}
+input{
+    padding:40px;
+    font-size: 50px;
+}
+body{
+    background-color: bisque;
+}

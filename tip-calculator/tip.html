@@ -8,8 +8,10 @@
 function calcTip() {
 
 	// Enter your code here to make Tip Calculator work
-	let subtotal = parseInt(document.getElementById("subtotal").value);
-	let rate = parseInt(document.getElementById("tip").value);
+	let input1 = document.getElementById("subtotal").value;
+	let subtotal = parseInt(input1);
+	let input2 = document.getElementById("tip").value;
+	let rate = parseInt(input2);
 	let tip = subtotal * (rate / 100);
 	let total = subtotal + tip;
 	document.getElementById("total").innerHTML="$" + total;
