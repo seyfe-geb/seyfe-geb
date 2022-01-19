@@ -1,0 +1,19 @@
+body{
+    background-color: dodgerblue;
+    font-size: 15pt;
+}
+fieldset{
+    margin:200px 100px 50px 350px;
+}
+label{
+    margin-left: 200px;
+}
+button{
+    margin-left: 200px;
+    font-size: 15pt;
+}
+textarea{
+    width:80%; 
+    height:200px;
+    margin-left: 50px;
+}
