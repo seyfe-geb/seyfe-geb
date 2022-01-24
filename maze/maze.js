@@ -34,7 +34,6 @@ $(document).ready(function () {
           },
         lostAction:function(){
             $("div.boundary").css("background-color", "#ff8888");
-            $("div .boundary").addClass("youlose");
             $("#status").text("");
             $("#status").append("You Lose! &#128078;");
             $("#end").unbind("mouseenter");
