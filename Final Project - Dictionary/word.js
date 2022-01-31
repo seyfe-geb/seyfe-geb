@@ -23,7 +23,7 @@ exports.queryWord= function(word, res){
     con.query(sql, function (err, data) {
       if (err) throw err;
       res.json(data);
-       con.end(() => console.log("DB Disconnected!"));
+       //con.end(() => console.log("DB Disconnected!"));
   
     });
 }
