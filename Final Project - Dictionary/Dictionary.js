@@ -22,6 +22,7 @@ app.use(function (req, res, next) {
   // Pass to next layer of middleware
   next();
 })
+app.use(express.static("./"));
 
 app.listen(port, () => console.log("Server start on port: " + port))
 
