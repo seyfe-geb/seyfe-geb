@@ -1,0 +1,28 @@
+Here how it works
+
+The main webpage (User Interface) has a text field for the User to enter a word and a Lookup Button to
+request the definition of the word. When the User clicks the Lookup Button, a JavaScript event handler
+(in file dict.js) is invoked that contains a jQuery Ajax call. The Ajax call picks up the word from the text
+field and sends it to the Web Server (Dictionary.js). Then the Server calls word.js to find the definition(s)
+of the word in the SQL Dictionary, and then converts the definition(s) into JSON format and transmits it
+back to the JavaScript in dict.js, where jQuery is used to display the definition(s) on the website. If there
+are multiple definitions, then all should be displayed. The above picture is a simple example of a display.
+
+
+files:
+1. dict.html: displays the webpage containing the User Interface
+2. dict.css: styling for dict.html
+3. dict.js: JavaScript event handlers for dict.html, it handles the onclick event. It sends a page get request to the server(Dictionary.js) once user input and click lookup,
+5. Dictionary.js: Node.js web server for this web site, it starts the server and recives client request and send it to word.js
+6. word.js: Node.js program to lookup the term in the database, collect the meanings,
+and send JSON to Browser
+
+Dependencies:
+go to this directory and install express and mysql by:
+npm install express
+npm install mysql
+
+In order to work, remember to start the server first by running: node Dictionary.js
+Then go the dict.html and search words. 
+
+You may also open this project in browser via: http://127.0.0.1:5500/Project-dictionary/dict.html
