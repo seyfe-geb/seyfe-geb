@@ -1,0 +1,12 @@
+html
+  head
+    title= 'Number Quiz'
+  body
+    fieldset(style={background: 'aqua', margin: '80px 500px'}) 
+      legend(style={'font-size': '24pt', 'font-weight':'bold'})= 'Number Quiz' 
+      h1= 'The Number Quiz'
+
+      p= 'Your current score is '+ score 
+      p= 'You have completed the Number Quiz, with score of '+ score+ ' out of '+ max
+      a(href="http://localhost:8080/")='Restart the game>>' 
+      

@@ -1,0 +1,12 @@
+How Number quiz works:
+
+1. Create a folder named lab9-numquiz
+2. go to terminal, change directory to this folder
+3. install express using: npm install express
+4. install pug( alternative for html): npm install pug
+5. create view folder and put your .pug files there, pug is a template engine that is basically like html with interactive features, like using variable and loop inside
+
+6. Create app.js file, intiate express and listen to port 2020
+
+7. Then call the pug files when user request the webpage, ex. show index.pug if 'localhost:2020/' is requested 
+show result.pug if 'localhost:2020/submit' is requested

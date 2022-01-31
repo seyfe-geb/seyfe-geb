@@ -1,0 +1,19 @@
+html
+  head
+    title= 'Number Quiz'
+  body 
+    fieldset(style={background: 'aqua', margin: '80px 500px'}) 
+      legend(style={'font-size': '24pt', 'font-weight':'bold'})= 'Number Quiz'
+      h1= 'The Number Quiz'
+      p= 'Your current score is '+ score 
+      p= 'Guess the number in the sequence.'
+      p= sequence
+      form(method="GET" action= "http://localhost:8080/submit")
+        label= 'Your answer: '
+          input(type="number" name="answer")
+          br
+          input(type="hidden" name="score" value=score)
+          br 
+          input(type="submit")
+
+    
