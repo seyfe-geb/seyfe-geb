@@ -22,12 +22,3 @@ con.query(sql, function (err, data) {
     });
 }
 
-
-
-
-
-
-
-
-
-
